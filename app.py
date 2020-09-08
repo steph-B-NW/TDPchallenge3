@@ -13,4 +13,4 @@ def home():
     return f"<h1>Hello friend.</h1>\n\n<h2>I'm currently running in ${hostname}.</h2>"
 
 if __name__=='__main__':
-  app.run(host='0.0.0.0', port=5000, debug=True)
+  app.run(host='0.0.0.0', port=5001, debug=True)
