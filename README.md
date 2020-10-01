@@ -5,7 +5,7 @@
 ### Environment
 
 To use the app you need to make sure the requirements are installed.
-It is best to do this in a virtual environment or use a Docker container.
+It is best to do this in a virtual environment OR use a Docker container.
 
 #### Venv
 
@@ -17,7 +17,7 @@ python3 -m venv venv
 
 ### Testing
 
-Then you can run the tests.
+Then you can run the tests. This can only be done if the dependencies in requirements.txt are installed.
 
 ```bash
 # In the root of the project
