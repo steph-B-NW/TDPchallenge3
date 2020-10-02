@@ -1,0 +1,20 @@
+pipeline {
+	agent any
+	stages{
+		stage('test-app') {
+			steps {
+				py "./app.py"
+			}
+		}
+		stage('build images') {
+			steps {
+				sh "./scripts/build_images.sh"
+			}
+		}
+		stage('push_images') {
+			steps {
+				sh "./scripts/push_images.sh"
+			}
+		}
+	}
+}
