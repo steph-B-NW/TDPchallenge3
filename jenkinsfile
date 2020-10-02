@@ -1,14 +1,14 @@
 pipeline {
 	agent any
-	stages{
-		stage('test-app') {
-			steps {
-				sh "./scripts/run.sh"
-			}
-		}
+		steps {
 		stage('build images') {
 			steps {
 				sh "./scripts/build_images.sh"
+			}
+		}
+		stage('test-app') {
+                        steps {
+                                sh "./scripts/run.sh"
 			}
 		}
 		stage('push_images') {
