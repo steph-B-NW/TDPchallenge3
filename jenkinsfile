@@ -3,7 +3,7 @@ pipeline {
 	stages{
 		stage('test-app') {
 			steps {
-				py "./app.py"
+				sh "./scripts/run.sh"
 			}
 		}
 		stage('build images') {
